@@ -2,6 +2,7 @@ const customizeModal = document.getElementById('customizeModal');
 const customizeForm = document.getElementById('customizeForm');
 const cancelCustomizeBtn = document.getElementById('cancelCustomize');
 
+// Loop through all buttons using querySelector
 document.querySelectorAll('.btn-select').forEach(button => {
     button.addEventListener('click', () => {
         const dashboardType = button.dataset.dashboard;
