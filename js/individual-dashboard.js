@@ -39,22 +39,18 @@ function init() {
 }
 
 function initializeEventListeners() {
-    // Add Income button
     addIncomeBtn.addEventListener('click', () => {
         currentTransactionType = 'income';
         openTransactionModal();
     });
 
-    // Add Expense button
     addExpenseBtn.addEventListener('click', () => {
         currentTransactionType = 'expense';
         openTransactionModal();
     });
 
-    // Cancel transaction button
     cancelTransactionBtn.addEventListener('click', closeTransactionModal);
 
-    // Reset data button
     resetDataBtn.addEventListener('click', () => {
         showConfirmDialog(
             'Reset Dashboard',
@@ -63,13 +59,11 @@ function initializeEventListeners() {
         );
     });
 
-    // Transaction form submission
     transactionForm.addEventListener('submit', (e) => {
         e.preventDefault();
         addTransaction();
     });
 
-    // Close modal when clicking outside
     window.addEventListener('click', (e) => {
         if (e.target === transactionModal) {
             closeTransactionModal();
@@ -112,6 +106,7 @@ function closeTransactionModal() {
     transactionModal.style.display = 'none';
     transactionForm.reset();
 }
+
 // Adds a new transaction
 function addTransaction() {
     const description = document.getElementById('description').value;
@@ -255,7 +250,7 @@ function initializeChart() {
     });
 }
 
-//Updates the expense distribution chart with current data
+// Updates the expense distribution chart with current data
 function updateChart() {
     if (!doughnutChart) {
         initializeChart();
