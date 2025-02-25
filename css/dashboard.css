@@ -256,7 +256,7 @@
 .btn-delete {
     background: none;
     border: none;
-    color: #dc3545;
+    color: rgb(220, 53, 69);
     cursor: pointer;
     padding: 0.5rem;
     transition: color 0.3s ease;
@@ -264,7 +264,7 @@
 }
 
 .btn-delete:hover {
-    color: #c82333;
+    color: rgb(200, 35, 51);
     opacity: 1;
 }
 
