@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Budget Manager</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="welcome-header">
+            <h1>Welcome to Budget Manager</h1>
+            <p class="subtitle">Track and manage your finances effortlessly.</p>
+        </header>
+
+        <main class="user-selection">
+            <div class="selection-card individual">
+                <i class="fas fa-wallet"></i>
+                <h2>Individual</h2>
+                <p>For personal finance management</p>
+                <button class="btn-select" data-dashboard="individual">Get Started</button>
+            </div>
+        </main>
+
+        <footer>
+            <nav>
+                <a href="#features">Features</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </footer>
+    </div>
+    <!-- Customize Modal -->
+    <div class="modal" id="customizeModal">
+        <div class="modal-content">
+            <h2>Before You Start</h2>
+            <p class="modal-subtitle">Please enter your name to personalize your experience</p>
+            <form id="customizeForm">
+                <div class="form-group">
+                    <label for="username">Your Name</label>
+                    <input type="text" id="username" required placeholder="Enter your name">
+                </div>
+                <div class="form-actions">
+                    <button type="button" class="btn-secondary" id="cancelCustomize">Cancel</button>
+                    <button type="submit" class="btn-primary">Continue</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="/js/main.js"></script>
+</body>
+</html>
